@@ -64,13 +64,18 @@
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->created_at->format('d/m/Y H:i') }}</td>
-                            <td> 
+                            <td>
+                                <button type = "submit" class = "btn btn-primary btn-sm me-2 d-inline">Editar</button>
+                                <hr>
+                    
                                 <form action = "{{route('users.destroy', $user->id)}}" method = "POST">
                                     @csrf <!--Cross-Site Request Forgery protection.-->
                                     @method ('DELETE')
                                     <button type = "submit" class = "btn btn-danger btn-sm" onclick = "return confirm('Are you sure you want to delete this user?')">Delete</button>
                     
                                 </form>
+
+                                
                         </td>
                         </tr>
                   
