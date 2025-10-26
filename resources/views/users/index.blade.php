@@ -65,8 +65,9 @@
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->created_at->format('d/m/Y H:i') }}</td>
                             <td>
-                                <button type = "submit" class = "btn btn-primary btn-sm me-2 d-inline">Editar</button>
-                                <hr>
+
+
+                                <a href = "{{route('users.edit', $user->id)}}" class = "btn btn-primary btn-sm me-2 d-inline-block">Edit</a>                              
                     
                                 <form action = "{{route('users.destroy', $user->id)}}" method = "POST">
                                     @csrf <!--Cross-Site Request Forgery protection.-->
