@@ -34,8 +34,8 @@ class UserController extends Controller
     }
     
     public function list(){
-        $users = User::all();
-        return view('users.index', compact('users'));
+        $user = User::all();
+        return view('users.index', compact('user'));
     }
 
     public function destroy($id){
@@ -52,16 +52,22 @@ class UserController extends Controller
     }
 
     public function update (Request $request, $id){
+
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email, '.$id,
         ]);
-        $user = User::findOrfail($id);
 
+        $user = User::findOrfail($id);
         $user-> name = $request->name;
         $user-> email = $request->email;
         $user-> save();
         return redirect()-> route ('users.index') -> with ('sucess', 'Usuário atualizado com sucesso!');
+    }
+
+    public function file(){
+        $user = User::all();
+        return view('users.file', compact('user'));
     }
 
 
