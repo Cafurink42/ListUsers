@@ -20,20 +20,23 @@
             </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                     <li class="nav-item">
-                         <a class="nav-link active" href="{{ url('/') }}">Home</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('users.create') }}">Create User</a>
-                    </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="{{ route('users.index') }}">List Users</a>
-                    </li>
-                </ul>
-            </div>
+             <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                     <a class="nav-link active" href="{{ url('/') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="{{ route('users.create') }}">Create User</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link" href="{{ route('users.index') }}">List Users</a>
+                 </li>
+                 <li class = "nav-item">
+                    <a class = "nav-link" href = "{{route('users.file')}}">Upload File</a>
+                 </li>
+             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
   <div class="container mt-4">

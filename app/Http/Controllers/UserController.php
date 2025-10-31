@@ -34,8 +34,8 @@ class UserController extends Controller
     }
     
     public function list(){
-        $user = User::all();
-        return view('users.index', compact('user'));
+        $users = User::all();
+        return view('users.index', compact('users'));
     }
 
     public function destroy($id){

@@ -27,6 +27,9 @@
                 <li class="nav-item">
                      <a class="nav-link" href="{{ route('users.index') }}">List Users</a>
                  </li>
+                 <li class = "nav-item">
+                    <a class = "nav-link" href = "{{route('users.file')}}">Upload File</a>
+                 </li>
              </ul>
         </div>
     </div>
@@ -87,7 +90,7 @@
 
             @if ($users->isEmpty())
                 <div class="alert alert-warning text-center mt-3">
-                    No users found.
+                    Nenhum usuário encontrado.
                 </div>
             @endif
         </div>
