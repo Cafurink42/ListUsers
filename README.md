@@ -1,8 +1,4 @@
 
-
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nome do Projeto — Apresentação</title>
-
 </head>
 <body>
   <div class="wrap" role="main">
