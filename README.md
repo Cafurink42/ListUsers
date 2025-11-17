@@ -4,32 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nome do Projeto — Apresentação</title>
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#06b6d4;
-      --glass: rgba(255,255,255,0.03);
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    body{margin:0;background:linear-gradient(180deg,#071028 0%, #07172b 100%);color:#e6eef6;line-height:1.5}
-    .wrap{max-width:980px;margin:36px auto;padding:28px;background:var(--glass);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
-    header{display:flex;gap:16px;align-items:center}
-    .logo{width:72px;height:72px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
-    h1{margin:0;font-size:28px}
-    p.lead{color:var(--muted);margin-top:6px}
-    section{margin-top:22px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.03)}
-    h2{font-size:18px;margin:0 0 12px 0}
-    ul{margin:0 0 12px 20px}
-    pre{background:#071428;padding:12px;border-radius:8px;overflow:auto;color:#cfeffd}
-    code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace}
-    .badges img{height:20px;margin-right:8px;vertical-align:middle}
-    .grid{display:grid;grid-template-columns:1fr 260px;gap:18px}
-    .card{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px}
-    .small{font-size:13px;color:var(--muted)}
-    .footer{margin-top:22px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
-    a{color:var(--accent);text-decoration:none}
-    img.demo{max-width:100%;border-radius:8px;border:1px solid rgba(255,255,255,0.04)}
-    @media(max-width:840px){.grid{grid-template-columns:1fr}}
-  </style>
+
 </head>
 <body>
   <div class="wrap" role="main">
